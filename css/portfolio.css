@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Overlock';
+    src: url('../font/Overlock-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Overlock';
+    src: url('../font/Overlock-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Overlock';
+    src: url('../font/Overlock-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Overlock';
+    src: url('../font/Overlock-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Overlock';
+    src: url('../font/Overlock-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Overlock';
+    src: url('../font/Overlock-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --black-text-color: #000000;
+    --white-text-color: #FFFFFF;
+
+    --lm-bg-color: #C9F1FF;
+    --lm-prominent-element-color: #1F4B7D; /* button color, paragraph/description/footer background color */
+    --lm-secondary-element-color: #005070; /* navigation/descripter color, small rectangle color */
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--lm-bg-color);
+    .layout {
+        margin: 0 10px;
+    }
+}
+
+h1 {
+    font-family: Overlock;
+    margin-top: 4.375rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: Overlock;
+    font-size: 1.6875rem;
+    font-style: italic;
+    margin-top: 2.1875rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: Overlock;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-bottom: -0.625rem;
+}
+
+a {text-decoration: none;}
+
+img { width: 100%; height: auto; }
+
+.reads img, .movies img{
+    width: 45%; height: auto;
+    margin-top: 1.4375rem;
+}
+
+.menu {
+    width: 40px;
+    height: auto;
+    position: fixed;
+    right: 12px;
+    top: 17px;
+    border-radius: 8px;
+    background-color: var(--lm-bg-color);
+}
+
+nav {
+    border: 2px solid var(--lm-secondary-element-color);
+    border-radius: 22px;
+    bottom: 0;
+    margin: 3.125rem auto;
+    ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        a {
+            display: block;
+            font-family: Quicksand;
+            font-weight: 600;
+            margin: 30px auto;
+            height: 30px;
+        }
+        a:link {color: var(--black-text-color);}
+        a:visited {color: var(--black-text-color);}
+    }
+}
+
+.creatives-detail {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        border: 1px solid var(--lm-secondary-element-color);
+        display: inline-block;
+        font-family: Quicksand;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin: 0.25rem 0.125rem;
+        padding: 0.25rem 0.5rem;
+    }
+    p:first-of-type {
+        background-color: var(--lm-prominent-element-color);
+        color: var(--white-text-color);
+        border-radius: 1.875rem;
+        margin: 1.25rem auto;
+        padding: 1rem;
+    }
+    h3 {
+        font-family: Overlock;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 2.5rem 1rem -0.625rem;
+    }
+}
+
+header a {
+    background-color: var(--lm-secondary-element-color);
+    color: var(--white-text-color)
+}
+
+.resume-contact {
+    font-family: Quicksand;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.resume {
+    h3 {
+        color: var(--lm-prominent-element-color);
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-family: Overlock;
+        font-size: 1.125rem;
+        margin-top: 1.5625rem;
+        margin-bottom: 0.4375rem;
+    }
+    ul {
+        font-family: Quicksand;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+        margin-top: 0;
+    }
+    hr {
+        border: 1.5px solid black;
+        margin-top: 30px;
+    }
+}
+
+.main {
+    width: 15.625rem;
+    margin: 0 auto;
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            background-color: var(--lm-prominent-element-color);
+            color: var(--white-text-color);
+            border-radius: 1.875rem;
+            font-family: Quicksand;
+            font-size: 1.25rem;
+            margin: 10px auto;
+            padding: 14px;
+            text-align: center;
+        }
+        a:link {color: var(--white-text-color);}
+        a:visited { color: white; }
+    }
+}
+
+.creatives {
+    h2 {
+        font-style: initial;
+        margin: 3.75rem auto -0.125rem;
+    }
+    div {
+        background-color: var(--lm-prominent-element-color);
+        color: var(--white-text-color);
+        border-radius: 1.875rem;
+        margin: 1.25rem auto;
+        padding: 1rem;
+        p {
+            font-weight: initial;
+            margin: 0;
+        }
+    }
+    a {
+        background-color: var(--lm-secondary-element-color);
+        border-radius: 1.875rem;
+        box-shadow: 0 0 0.25rem 0.0625rem rgba(0, 0, 0, 0.3);
+        font-family: Quicksand;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: auto 4px;
+        padding: 10px 14px 12px;
+    }
+    a:link {color: var(--white-text-color);}
+    a:visited { color: white; }
+}
+
+.quote {
+    font-family: Quicksand;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-family: Quicksand;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--lm-prominent-element-color);
+    color: var(--white-text-color);
+}
+
+.contactinfo {
+    width: 140px;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+.mail, .linkedin, .github {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+/* get them to center */
+}
