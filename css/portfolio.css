@@ -59,14 +59,19 @@
     --white-text-color: #FFFFFF;
 
     --lm-bg-color: #C9F1FF;
-    --lm-prominent-element-color: #1F4B7D; /* button color, paragraph/description/footer background color */
-    --lm-secondary-element-color: #005070; /* navigation/descripter color, small rectangle color */
+    --lm-prominent-element-color: #1F4B7D;
+    /* button color, paragraph/description/footer background color */
+    --lm-secondary-element-color: #005070;
+    /* navigation/descripter color, small rectangle color */
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--lm-bg-color);
+
     .layout {
         margin: 0 10px;
     }
@@ -82,7 +87,6 @@ h2 {
     font-family: Overlock;
     font-size: 1.6875rem;
     font-style: italic;
-    margin-top: 2.1875rem;
     text-align: center;
 }
 
@@ -94,12 +98,19 @@ h3 {
     margin-bottom: -0.625rem;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
-img { width: 100%; height: auto; }
+img {
+    width: 100%;
+    height: auto;
+}
 
-.reads img, .movies img{
-    width: 45%; height: auto;
+.reads img,
+.movies img {
+    width: 45%;
+    height: auto;
     margin-top: 1.4375rem;
 }
 
@@ -118,10 +129,14 @@ nav {
     border-radius: 22px;
     bottom: 0;
     margin: 3.125rem auto;
+    max-width: 800px;
+    height: auto;
+
     ul {
         list-style: none;
         text-align: center;
         padding: 0;
+
         a {
             display: block;
             font-family: Quicksand;
@@ -129,16 +144,26 @@ nav {
             margin: 30px auto;
             height: 30px;
         }
-        a:link {color: var(--black-text-color);}
-        a:visited {color: var(--black-text-color);}
+
+        a:link {
+            color: var(--black-text-color);
+        }
+
+        a:visited {
+            color: var(--black-text-color);
+        }
     }
 }
 
 .creatives-detail {
     ul {
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
         list-style: none;
         padding: 0;
     }
+
     li {
         border: 1px solid var(--lm-secondary-element-color);
         display: inline-block;
@@ -148,6 +173,7 @@ nav {
         margin: 0.25rem 0.125rem;
         padding: 0.25rem 0.5rem;
     }
+
     p:first-of-type {
         background-color: var(--lm-prominent-element-color);
         color: var(--white-text-color);
@@ -155,6 +181,7 @@ nav {
         margin: 1.25rem auto;
         padding: 1rem;
     }
+
     h3 {
         font-family: Overlock;
         font-size: 1.25rem;
@@ -176,17 +203,23 @@ header a {
 }
 
 .resume {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+
     h3 {
         color: var(--lm-prominent-element-color);
         font-weight: bolder;
         margin-bottom: 1rem;
     }
+
     p {
         font-family: Overlock;
         font-size: 1.125rem;
         margin-top: 1.5625rem;
         margin-bottom: 0.4375rem;
     }
+
     ul {
         font-family: Quicksand;
         font-size: 0.9375rem;
@@ -194,18 +227,21 @@ header a {
         line-height: 1.5rem;
         margin-top: 0;
     }
+
     hr {
         border: 1.5px solid black;
         margin-top: 30px;
     }
 }
 
-.main {
+.main_button {
     width: 15.625rem;
     margin: 0 auto;
+
     ul {
         list-style: none;
         padding: 0;
+
         li {
             background-color: var(--lm-prominent-element-color);
             color: var(--white-text-color);
@@ -216,27 +252,48 @@ header a {
             padding: 14px;
             text-align: center;
         }
-        a:link {color: var(--white-text-color);}
-        a:visited { color: white; }
+
+        a:link {
+            color: var(--white-text-color);
+        }
+
+        a:visited {
+            color: white;
+        }
     }
 }
 
 .creatives {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+
+    section {
+        background-color: rgba(var(--lm-prominent-element-color), 0.5);
+        /* why is the opacity not applying? */
+        border: 2px solid var(--lm-prominent-element-color);
+        border-radius: 1.875rem;
+        box-shadow: inset 0px 0px 0.25rem 0.0625rem rgb(33 70 112 / 30%);
+        margin: 3.75rem auto -0.125rem;
+        padding-bottom: 2.5rem;
+    }
+
     h2 {
         font-style: initial;
-        margin: 3.75rem auto -0.125rem;
     }
+
     div {
         background-color: var(--lm-prominent-element-color);
         color: var(--white-text-color);
-        border-radius: 1.875rem;
         margin: 1.25rem auto;
         padding: 1rem;
+
         p {
             font-weight: initial;
             margin: 0;
         }
     }
+
     a {
         background-color: var(--lm-secondary-element-color);
         border-radius: 1.875rem;
@@ -247,8 +304,94 @@ header a {
         margin: auto 4px;
         padding: 10px 14px 12px;
     }
-    a:link {color: var(--white-text-color);}
-    a:visited { color: white; }
+
+    a:link {
+        color: var(--white-text-color);
+    }
+
+    a:visited {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 550px) {
+
+    /* h1 { font-size: 150% } why is the font size of this smaller after its applied? */
+    .creatives {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+
+        section {
+            /* how do I make this the same size? */
+            margin-left: 10px;
+            margin-right: 10px;
+            /* why does margin: auto 10px; mess things up? */
+        }
+    }
+
+    .skills {
+        display: flex;
+    }
+
+    .creative-specifics-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            'research research-image'
+            'ideations ideations-image'
+            'prototypes .';
+    }
+
+    .prototypes-image {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            /* I'm not sure how to fix this issue */
+            display: flex;
+            flex-shrink: 4;
+        }
+    }
+
+    /*.about-section-one {
+        display: flex;
+        grid-area: about-section-one;
+        .photography {
+            justify-content: flex-end;
+            h2 { margin-top: 4.375rem;}
+        }
+    } */
+    /*.about-section-two {
+        display: flex;
+        grid-area: about-section-two;
+        h3 { text-align: center;}
+    } */
+    .about-layout {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'introduction introduction photography photography'
+            '. good-reads good-movies .';
+        /* I don't know why it's showing up like that */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            margin: 10px;
+        }
+    }
+}
+
+.about {
+    h2 {
+        margin-top: 2.1875rem;
+    }
 }
 
 .quote {
@@ -277,9 +420,10 @@ footer {
     padding: 8px 0;
 }
 
-.mail, .linkedin, .github {
+.mail,
+.linkedin,
+.github {
     display: inline-block;
     width: 40px;
     height: auto;
-/* get them to center */
 }
