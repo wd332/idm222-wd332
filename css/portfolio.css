@@ -174,7 +174,7 @@ nav {
         padding: 0.25rem 0.5rem;
     }
 
-    p:first-of-type {
+    .creatives-intro {
         background-color: var(--lm-prominent-element-color);
         color: var(--white-text-color);
         border-radius: 1.875rem;
