@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Quicksand';
+    font-family: Quicksand;
     src: url('../font/Quicksand-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'Overlock';
+    font-family: Overlock;
     src: url('../font/Overlock-BlackItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'Overlock';
+    font-family: Overlock;
     src: url('../font/Overlock-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Overlock';
+    font-family: Overlock;
     src: url('../font/Overlock-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: 'Overlock';
+    font-family: Overlock;
     src: url('../font/Overlock-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'Overlock';
+    font-family: Overlock;
     src: url('../font/Overlock-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'Overlock';
+    font-family: Overlock;
     src: url('../font/Overlock-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
@@ -78,33 +78,37 @@ body {
 }
 
 h1 {
-    font-family: Overlock;
+    font-family: "Overlock";
     margin-top: 4.375rem;
     text-align: center;
 }
 
 h2 {
-    font-family: Overlock;
+    font-family: "Overlock";
     font-size: 1.6875rem;
     font-style: italic;
     text-align: center;
 }
 
 h3 {
-    font-family: Overlock;
+    font-family: "Overlock";
     font-size: 1.5rem;
     font-weight: 500;
     margin-left: 1rem;
     margin-bottom: -0.625rem;
 }
 
+p {
+    font-family: "Quicksand";
+    font-size: 0.9375rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 1rem;
+}
+
 a {
     text-decoration: none;
     transition: 0.1s ease-in-out;
-}
-
-a:hover {
-    transform: scale(1.1);
 }
 
 img {
@@ -141,23 +145,24 @@ nav {
         list-style: none;
         text-align: center;
         padding: 0;
-
-        a {
-            display: block;
-            font-family: Quicksand;
-            font-weight: 600;
-            margin: 30px auto;
-            height: 30px;
-        }
-
-        a:link {
-            color: var(--black-text-color);
-        }
-
-        a:visited {
-            color: var(--black-text-color);
-        }
     }
+
+    a {
+        display: block;
+        font-family: "Quicksand";
+        font-weight: 600;
+        margin: 30px auto;
+        height: 30px;
+    }
+
+    a:link {
+        color: var(--black-text-color);
+    }
+
+    a:visited {
+        color: var(--black-text-color);
+    }
+
 }
 
 .creatives-detail {
@@ -176,7 +181,7 @@ nav {
     li {
         border: 1px solid var(--lm-secondary-element-color);
         display: inline-block;
-        font-family: Quicksand;
+        font-family: "Quicksand";
         font-size: 0.75rem;
         font-weight: 600;
         margin: 0.25rem 0.125rem;
@@ -192,7 +197,7 @@ nav {
     }
 
     h3 {
-        font-family: Overlock;
+        font-family: "Overlock";
         font-size: 1.25rem;
         font-weight: bold;
         margin: 2.5rem 1rem -0.625rem;
@@ -205,7 +210,7 @@ header a {
 }
 
 .resume-contact {
-    font-family: Quicksand;
+    font-family: "Quicksand";
     font-weight: bold;
     text-align: center;
     margin-top: -15px;
@@ -223,14 +228,14 @@ header a {
     }
 
     p {
-        font-family: Overlock;
+        font-family: "Overlock";
         font-size: 1.125rem;
         margin-top: 1.5625rem;
         margin-bottom: 0.4375rem;
     }
 
     ul {
-        font-family: Quicksand;
+        font-family: "Quicksand";
         font-size: 0.9375rem;
         font-weight: bold;
         line-height: 1.5rem;
@@ -250,26 +255,27 @@ header a {
     ul {
         list-style: none;
         padding: 0;
-
-        li {
-            background-color: var(--lm-prominent-element-color);
-            color: var(--white-text-color);
-            border-radius: 1.875rem;
-            font-family: Quicksand;
-            font-size: 1.25rem;
-            margin: 10px auto;
-            padding: 14px;
-            text-align: center;
-        }
-
-        a:link {
-            color: var(--white-text-color);
-        }
-
-        a:visited {
-            color: white;
-        }
     }
+
+    li {
+        background-color: var(--lm-prominent-element-color);
+        color: var(--white-text-color);
+        border-radius: 1.875rem;
+        font-family: "Quicksand";
+        font-size: 1.25rem;
+        margin: 10px auto;
+        padding: 14px;
+        text-align: center;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:link {
+        color: var(--white-text-color);
+    }
+
 }
 
 .creatives {
@@ -329,7 +335,7 @@ header a {
         border-radius: 1.875rem;
         box-shadow: 0 0 0.25rem 0.0625rem rgba(0, 0, 0, 0.3);
         display: inline-block;
-        font-family: Quicksand;
+        font-family: "Quicksand";
         font-size: 1rem;
         font-weight: 600;
         margin: 16px 4px auto;
@@ -369,8 +375,7 @@ header a {
 
     .creatives {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        grid-template: auto / repeat(2, 1fr);
         grid-template-areas:
             'dragonventure thephoenixlantern';
         max-width: 800px;
@@ -425,8 +430,7 @@ header a {
 
     .creative-specifics-layout {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template: repeat(3, 1fr) / 2fr 1fr;
         grid-template-areas:
             'research research-image'
             'ideations ideations-image'
@@ -435,8 +439,7 @@ header a {
 
     .prototypes-image {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        grid-template: 1fr / repeat(3, 1fr);
         grid-template-areas: 'locker lounge app';
     }
 
@@ -454,8 +457,7 @@ header a {
 
     .creatives-projects {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        grid-template: auto / repeat(3, 1fr);
         grid-template-areas:
             'oneliketwo twolikeone illusion-of-transparency';
         max-width: 800px;
@@ -482,8 +484,7 @@ header a {
 
     .about-layout {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
+        grid-template: auto / repeat(4, 1fr);
         grid-template-areas:
             'introduction introduction photography photography'
             '. good-reads good-movies .';
@@ -509,18 +510,10 @@ header a {
 }
 
 .quote {
-    font-family: Quicksand;
+    font-family: "Quicksand";
     font-size: 0.9375rem;
     font-weight: bold;
     text-align: center;
-}
-
-p {
-    font-family: Quicksand;
-    font-size: 0.9375rem;
-    font-weight: bold;
-    line-height: 1.5rem;
-    margin: 1rem;
 }
 
 footer {
@@ -540,4 +533,8 @@ footer {
     display: inline-block;
     width: 40px;
     height: auto;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
