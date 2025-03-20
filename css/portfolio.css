@@ -100,6 +100,11 @@ h3 {
 
 a {
     text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
 
 img {
@@ -156,6 +161,10 @@ nav {
 }
 
 .creatives-detail {
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+
     ul {
         max-width: 600px;
         height: auto;
@@ -268,14 +277,37 @@ header a {
     height: auto;
     margin: 0 auto;
 
+    .dragonventure {
+        background-color: rgb(138 43 226 / 13%);
+        border: 2px solid rgba(138, 43, 226, 0.2);
+        position: relative;
+    }
+
+    .thephoenixlantern {
+        background-color: rgb(51 128 208 / 13%);
+        border: 2px solid rgba(0, 123, 255, 0.2);
+        position: relative;
+    }
+
     section {
-        background-color: rgba(var(--lm-prominent-element-color), 0.5);
-        /* why is the opacity not applying? */
-        border: 2px solid var(--lm-prominent-element-color);
         border-radius: 1.875rem;
-        box-shadow: inset 0px 0px 0.25rem 0.0625rem rgb(33 70 112 / 30%);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 3.75rem auto -0.125rem;
-        padding-bottom: 2.5rem;
+        min-height: 475.71px;
+        transition: .2s ease-in-out;
+
+        img {
+            border-radius: 1.875rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    section:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
     }
 
     h2 {
@@ -283,8 +315,6 @@ header a {
     }
 
     div {
-        background-color: var(--lm-prominent-element-color);
-        color: var(--white-text-color);
         margin: 1.25rem auto;
         padding: 1rem;
 
@@ -298,10 +328,11 @@ header a {
         background-color: var(--lm-secondary-element-color);
         border-radius: 1.875rem;
         box-shadow: 0 0 0.25rem 0.0625rem rgba(0, 0, 0, 0.3);
+        display: inline-block;
         font-family: Quicksand;
         font-size: 1rem;
         font-weight: 600;
-        margin: auto 4px;
+        margin: 16px 4px auto;
         padding: 10px 14px 12px;
     }
 
@@ -314,24 +345,82 @@ header a {
     }
 }
 
-@media screen and (min-width: 550px) {
+.creatives-projects {
+    div {
+        display: block;
+        width: 50%;
+        height: auto;
+        margin: 1.25rem auto;
 
-    /* h1 { font-size: 150% } why is the font size of this smaller after its applied? */
+        p {
+            margin-top: 0.3125rem;
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .dragonventure {
+        grid-area: dragonventure;
+    }
+
+    .thephoenixlantern {
+        grid-area: thephoenixlantern;
+    }
+
     .creatives {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'dragonventure thephoenixlantern';
         max-width: 800px;
 
         section {
-            /* how do I make this the same size? */
             margin-left: 10px;
             margin-right: 10px;
-            /* why does margin: auto 10px; mess things up? */
         }
     }
 
     .skills {
         display: flex;
+    }
+
+    .creatives-detail {
+        h3 {
+            margin-top: 0px;
+        }
+    }
+
+    .research {
+        grid-area: research;
+    }
+
+    .research-image {
+        grid-area: research-image;
+    }
+
+    .ideations {
+        grid-area: ideations;
+    }
+
+    .ideations-image {
+        grid-area: ideations-image;
+    }
+
+    .prototypes {
+        grid-area: prototypes;
+    }
+
+    .locker {
+        grid-area: locker;
+    }
+
+    .lounge {
+        grid-area: lounge;
+    }
+
+    .app {
+        grid-area: app;
     }
 
     .creative-specifics-layout {
@@ -345,29 +434,52 @@ header a {
     }
 
     .prototypes-image {
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            /* I'm not sure how to fix this issue */
-            display: flex;
-            flex-shrink: 4;
-        }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 'locker lounge app';
     }
 
-    /*.about-section-one {
-        display: flex;
-        grid-area: about-section-one;
-        .photography {
-            justify-content: flex-end;
-            h2 { margin-top: 4.375rem;}
-        }
-    } */
-    /*.about-section-two {
-        display: flex;
-        grid-area: about-section-two;
-        h3 { text-align: center;}
-    } */
+    #oneliketwo {
+        grid-area: oneliketwo;
+    }
+
+    #twolikeone {
+        grid-area: twolikeone;
+    }
+
+    #illusion-of-transparency {
+        grid-area: illusion-of-transparency;
+    }
+
+    .creatives-projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'oneliketwo twolikeone illusion-of-transparency';
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .introduction {
+        grid-area: introduction;
+    }
+
+    .photography {
+        grid-area: photography;
+        margin-top: 50px;
+    }
+
+    .good-reads {
+        grid-area: good-reads;
+    }
+
+    .good-movies {
+        grid-area: good-movies;
+    }
+
     .about-layout {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -375,7 +487,9 @@ header a {
         grid-template-areas:
             'introduction introduction photography photography'
             '. good-reads good-movies .';
-        /* I don't know why it's showing up like that */
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
     }
 
     nav ul {
