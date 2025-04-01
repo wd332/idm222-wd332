@@ -209,6 +209,24 @@ header a {
     color: var(--white-text-color)
 }
 
+#resume-pdf {
+    width: 9.375rem;
+    height: auto;
+    margin: 0 auto;
+
+    a {
+        background-color: var(--lm-secondary-element-color);
+        border-radius: 1.875rem;
+        box-shadow: 0 0 0.25rem 0.0625rem rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        font-family: "Quicksand";
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 16px 4px auto;
+        padding: 10px 14px 12px;
+    }
+}
+
 .resume-contact {
     font-family: "Quicksand";
     font-weight: bold;
@@ -246,6 +264,12 @@ header a {
         border: 1.5px solid black;
         margin-top: 30px;
     }
+}
+
+.main {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .main_button {
@@ -330,7 +354,7 @@ header a {
         }
     }
 
-    a {
+    /*a {
         background-color: var(--lm-secondary-element-color);
         border-radius: 1.875rem;
         box-shadow: 0 0 0.25rem 0.0625rem rgba(0, 0, 0, 0.3);
@@ -340,14 +364,32 @@ header a {
         font-weight: 600;
         margin: 16px 4px auto;
         padding: 10px 14px 12px;
-    }
+    }*/
 
     a:link {
-        color: var(--white-text-color);
+        color: black;
     }
 
     a:visited {
-        color: white;
+        color: black;
+    }
+
+    ul {
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        border: 1px solid var(--lm-secondary-element-color);
+        display: inline-block;
+        font-family: "Quicksand";
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin: 0.25rem 0.125rem;
+        padding: 0.25rem 0.5rem;
     }
 }
 
