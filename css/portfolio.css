@@ -131,15 +131,55 @@ img {
     top: 17px;
     border-radius: 8px;
     background-color: var(--lm-bg-color);
+    z-index: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    /* makes the sidebar hidden */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* Smooth sliding effect */
+    padding-top: 60px;
+    margin: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.closebtn {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.sidenav.open {
+    /* targets classes with sidenav and open in it */
+    /* makes the sidebar appear */
+    width: 250px;
 }
 
 nav {
     border: 2px solid var(--lm-secondary-element-color);
     border-radius: 22px;
     bottom: 0;
-    margin: 3.125rem auto;
     max-width: 800px;
-    height: auto;
 
     ul {
         list-style: none;
@@ -210,7 +250,7 @@ header a {
 }
 
 #resume-pdf {
-    width: 9.375rem;
+    width: 6.625rem;
     height: auto;
     margin: 0 auto;
 
@@ -242,7 +282,7 @@ header a {
     h3 {
         color: var(--lm-prominent-element-color);
         font-weight: bolder;
-        margin-bottom: 1rem;
+        text-transform: uppercase;
     }
 
     p {
@@ -257,7 +297,6 @@ header a {
         font-size: 0.9375rem;
         font-weight: bold;
         line-height: 1.5rem;
-        margin-top: 0;
     }
 
     hr {
@@ -561,6 +600,7 @@ header a {
 footer {
     background-color: var(--lm-prominent-element-color);
     color: var(--white-text-color);
+    margin-top: 3.125rem;
 }
 
 .contactinfo {

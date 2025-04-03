@@ -11,7 +11,14 @@
 
 <body>
     <div class="layout">
-        <a href="#nav"> <img class="menu" src="images/menu.svg" alt="menu icon"> </a>
+        <a> <img class="menu" onclick="openNav()" src="images/menu.svg" alt="menu icon"> </a>
+        <nav id="mysidenav" class="sidenav">
+            <a href="resume.html"> RESUME </a>
+            <a href="index.html"> HOME </a>
+            <a href="creatives.html"> CREATIVES </a>
+            <a href="aboutme.html"> ABOUT </a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x </a>
+        </nav>
         <header class="main">
             <h1> Wendy Dong </h1>
             <div class="quote">
@@ -62,14 +69,6 @@
                 </a>
             </section>
         </main>
-        <nav id="nav">
-            <ul>
-                <li> <a href="resume.html"> RESUME </a> </li>
-                <li> <a href="index.html"> HOME </a> </li>
-                <li> <a href="creatives.html"> CREATIVES </a> </li>
-                <li> <a href="aboutme.html"> ABOUT </a> </li>
-            </ul>
-        </nav>
     </div>
     <footer>
         <div class="contactinfo">
@@ -84,6 +83,7 @@
             </a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
