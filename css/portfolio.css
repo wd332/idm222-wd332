@@ -123,6 +123,24 @@ img {
     margin-top: 1.4375rem;
 }
 
+#wendy {
+    position: fixed;
+    font-size: 25px;
+    left: 12px;
+    top: 17px;
+    margin: 0;
+    background-color: var(--lm-bg-color);
+    z-index: 2;
+
+    a:link {
+        color: var(--black-text-color);
+    }
+
+    a:visited {
+        color: var(--black-text-color);
+    }
+}
+
 .menu {
     width: 40px;
     height: auto;
@@ -155,7 +173,6 @@ img {
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
     transition: 0.3s;
 }
 
@@ -346,6 +363,18 @@ header a {
     height: auto;
     margin: 0 auto;
 
+    .zara {
+        background-color: rgba(255, 255, 255, 0.379);
+        border: 2px solid rgba(17, 17, 18, 0.2);
+        position: relative;
+    }
+
+    .mono {
+        background-color: rgb(174 202 255 / 13%);
+        border: 2px solid #a9d1ff;
+        position: relative;
+    }
+
     .dragonventure {
         background-color: rgb(138 43 226 / 13%);
         border: 2px solid rgba(138, 43, 226, 0.2);
@@ -446,6 +475,14 @@ header a {
 }
 
 @media screen and (min-width: 550px) {
+    .zara {
+        grid-area: zara;
+    }
+
+    .mono {
+        grid-area: mono;
+    }
+
     .dragonventure {
         grid-area: dragonventure;
     }
@@ -458,6 +495,7 @@ header a {
         display: grid;
         grid-template: auto / repeat(2, 1fr);
         grid-template-areas:
+            'zara mono'
             'dragonventure thephoenixlantern';
         max-width: 800px;
 
@@ -477,6 +515,14 @@ header a {
         }
     }
 
+    .target {
+        grid-area: target;
+    }
+
+    .target-image {
+        grid-area: target-image;
+    }
+
     .research {
         grid-area: research;
     }
@@ -493,8 +539,8 @@ header a {
         grid-area: ideations-image;
     }
 
-    .prototypes {
-        grid-area: prototypes;
+    .conclusion {
+        grid-area: conclusion;
     }
 
     .locker {
@@ -509,16 +555,23 @@ header a {
         grid-area: app;
     }
 
-    .creative-specifics-layout {
-        display: grid;
-        grid-template: repeat(3, 1fr) / 2fr 1fr;
-        grid-template-areas:
-            'research research-image'
-            'ideations ideations-image'
-            'prototypes .';
+    #reviews {
+        width: 50%;
+        display: block;
     }
 
-    .prototypes-image {
+    .creative-specifics-layout {
+        display: grid;
+        grid-template: repeat(4, 1fr) / 2fr 1fr;
+        grid-template-areas:
+            'target target-image'
+            /* how do i make it so this only shows up for those that have it */
+            'research research-image'
+            'ideations ideations-image'
+            'conclusion .';
+    }
+
+    .conclusion-image {
         display: grid;
         grid-template: 1fr / repeat(3, 1fr);
         grid-template-areas: 'locker lounge app';
