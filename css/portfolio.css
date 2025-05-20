@@ -79,14 +79,14 @@ body {
 
 h1 {
     font-family: "Overlock";
-    margin-top: 4.375rem;
+    font-size: 2.5rem;
+    margin-top: 5.5rem;
     text-align: center;
 }
 
 h2 {
     font-family: "Overlock";
     font-size: 1.6875rem;
-    font-style: italic;
     text-align: center;
 }
 
@@ -123,14 +123,30 @@ img {
     margin-top: 1.4375rem;
 }
 
+/*iframe {
+    width: 100%;
+    height: auto;
+} */
+
+.navbar {
+    /* why is this not showing? */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--lm-bg-color);
+    border-bottom: 2px solid var(--lm-secondary-element-color);
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+}
+
 #wendy {
     position: fixed;
     font-size: 25px;
     left: 12px;
-    top: 17px;
+    top: 23px;
     margin: 0;
     background-color: var(--lm-bg-color);
-    z-index: 2;
 
     a:link {
         color: var(--black-text-color);
@@ -149,7 +165,6 @@ img {
     top: 17px;
     border-radius: 8px;
     background-color: var(--lm-bg-color);
-    z-index: 1;
 }
 
 .sidenav {
@@ -157,7 +172,7 @@ img {
     width: 0;
     /* makes the sidebar hidden */
     position: fixed;
-    z-index: 2;
+    /*z-index: 2;*/
     top: 0;
     right: 0;
     background-color: #ffffff;
@@ -223,16 +238,20 @@ nav {
 }
 
 .creatives-detail {
-    max-width: 1300px;
+    max-width: 800px;
     height: auto;
     margin: 0 auto;
 
     ul {
-        max-width: 600px;
+        max-width: 540px;
         height: auto;
         margin: 0 auto;
         list-style: none;
         padding: 0;
+
+        /*display: flex;
+        justify-content: center;
+        flex-wrap: wrap;*/
     }
 
     li {
@@ -255,10 +274,31 @@ nav {
 
     h3 {
         font-family: "Overlock";
-        font-size: 1.25rem;
+        font-size: 1.5625rem;
         font-weight: bold;
         margin: 2.5rem 1rem -0.625rem;
     }
+}
+
+.research-image,
+.desktop,
+.tablet,
+.phone {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    /* adjust this ratio as needed */
+    height: 0;
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 header a {
@@ -328,34 +368,15 @@ header a {
     margin: 0 auto;
 }
 
-.main_button {
-    width: 15.625rem;
-    margin: 0 auto;
+#zara-hero {
+    background: linear-gradient(to right, #0b0a09, #b78974);
+    border-radius: 1.875rem;
+    padding: 0;
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    li {
-        background-color: var(--lm-prominent-element-color);
-        color: var(--white-text-color);
-        border-radius: 1.875rem;
-        font-family: "Quicksand";
-        font-size: 1.25rem;
-        margin: 10px auto;
-        padding: 14px;
-        text-align: center;
-    }
-
-    a:visited {
-        color: white;
-    }
-
-    a:link {
-        color: var(--white-text-color);
-    }
-
+#mono-hero {
+    background: linear-gradient(to right, #02346f, #3591ff);
+    border-radius: 1.875rem;
 }
 
 .creatives {
@@ -364,57 +385,61 @@ header a {
     margin: 0 auto;
 
     .zara {
-        background-color: rgba(255, 255, 255, 0.379);
-        border: 2px solid rgba(17, 17, 18, 0.2);
-        position: relative;
+        background-color: rgb(171 128 108 / 30%);
+        border: 2px solid rgb(2 1 1 / 20%);
     }
 
     .mono {
-        background-color: rgb(174 202 255 / 13%);
-        border: 2px solid #a9d1ff;
-        position: relative;
+        background-color: rgb(51 142 250 / 13%);
+        border: 2px solid rgb(52 143 251 / 34%);
     }
 
     .dragonventure {
         background-color: rgb(138 43 226 / 13%);
         border: 2px solid rgba(138, 43, 226, 0.2);
-        position: relative;
     }
 
     .thephoenixlantern {
         background-color: rgb(51 128 208 / 13%);
         border: 2px solid rgba(0, 123, 255, 0.2);
-        position: relative;
     }
 
-    section {
+    button {
         border-radius: 1.875rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 3.75rem auto -0.125rem;
         min-height: 475.71px;
         transition: .2s ease-in-out;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         img {
             border-radius: 1.875rem;
-            position: absolute;
-            bottom: 0;
-            left: 0;
         }
     }
 
-    section:hover {
+    /*section div:nth-of-type(2) {
+        margin-bottom: -150px;
+        padding: 0;
+        border: 1px solid red;
+    }*/
+
+    button:hover {
         transform: scale(1.03);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     }
 
     h2 {
-        font-style: initial;
+        margin: 1.875rem 0 0;
     }
 
     div {
-        margin: 1.25rem auto;
         padding: 1rem;
+        text-align: left;
 
         p {
             font-weight: initial;
@@ -445,7 +470,7 @@ header a {
     ul {
         max-width: 600px;
         height: auto;
-        margin: 0 auto;
+        margin: 0.625rem auto 0;
         list-style: none;
         padding: 0;
     }
@@ -462,20 +487,65 @@ header a {
 }
 
 .creatives-projects {
-    div {
-        display: block;
-        width: 50%;
-        height: auto;
-        margin: 1.25rem auto;
+    p {
+        margin-top: 0.3125rem;
+    }
 
-        p {
-            margin-top: 0.3125rem;
-        }
+    img {
+        border-radius: 1.875rem;
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 13%);
+    }
+
+    li {
+        font-family: "Quicksand";
+        font-size: 0.9375rem;
+        font-weight: bold;
+        line-height: 1.35rem;
+        padding: 0.1875rem 0;
+    }
+
+    .desc {
+        background-color: #ffffff;
+        border-radius: 1.875rem;
+        padding: 0.0625rem 0 0.625rem;
+        padding-right: 1.25rem;
     }
 }
 
+.filter {
+    width: 200px;
+    margin: 30px auto 30px;
+
+    a {
+        /*background-color: var(--lm-bg-color);
+        color: black; */
+        border: 1px solid var(--lm-secondary-element-color);
+        border-radius: 1.875rem;
+        font-family: "Quicksand";
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0.25rem 0.25rem;
+        padding: 0.25rem 0.75rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    a:hover {
+        transform: scale(20);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    }
+}
+
+.subject {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 4.375rem auto 1.25rem;
+}
+
 @media screen and (min-width: 550px) {
-    .zara {
+
+    /*.zara {
         grid-area: zara;
     }
 
@@ -499,9 +569,18 @@ header a {
             'dragonventure thephoenixlantern';
         max-width: 800px;
 
-        section {
+        button {
             margin-left: 10px;
             margin-right: 10px;
+        } */
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+
+        button {
+            flex: 1;
+            margin: 10px;
         }
     }
 
@@ -509,13 +588,13 @@ header a {
         display: flex;
     }
 
-    .creatives-detail {
+    /* .creatives-detail {
         h3 {
             margin-top: 0px;
         }
-    }
+    } */
 
-    .target {
+    /*.target {
         grid-area: target;
     }
 
@@ -558,42 +637,85 @@ header a {
     #reviews {
         width: 50%;
         display: block;
-    }
+    } */
 
-    .creative-specifics-layout {
+    /*.creative-specifics-layout {
         display: grid;
         grid-template: repeat(4, 1fr) / 2fr 1fr;
         grid-template-areas:
             'target target-image'
-            /* how do i make it so this only shows up for those that have it */
             'research research-image'
             'ideations ideations-image'
             'conclusion .';
-    }
+    } */
 
-    .conclusion-image {
+    /* .conclusion-image {
         display: grid;
         grid-template: 1fr / repeat(3, 1fr);
         grid-template-areas: 'locker lounge app';
+    } */
+
+    .subject {
+        margin-top: 1.25rem;
     }
 
     #oneliketwo {
         grid-area: oneliketwo;
+        margin-right: 40px;
+    }
+
+    #oneliketwo-desc {
+        grid-area: oneliketwo-desc;
     }
 
     #twolikeone {
         grid-area: twolikeone;
+        margin-left: 40px;
     }
 
     #illusion-of-transparency {
         grid-area: illusion-of-transparency;
+        margin-right: 40px;
     }
 
-    .creatives-projects {
+    #notan {
+        grid-area: notan;
+        margin-left: 40px;
+    }
+
+    #photoshop {
+        grid-area: photoshop;
+        margin-right: 40px;
+        width: 60%;
+    }
+
+    #zodiac {
+        grid-area: zodiac;
+        margin-left: 40px;
+        width: 32%;
+    }
+
+    /*.creatives-projects {
         display: grid;
         grid-template: auto / repeat(3, 1fr);
         grid-template-areas:
             'oneliketwo twolikeone illusion-of-transparency';
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+    } */
+
+    .creatives-projects {
+        display: grid;
+        row-gap: 60px;
+        grid-template: auto / repeat(2, 1fr);
+        grid-template-areas:
+            'oneliketwo oneliketwo-desc'
+            '. twolikeone'
+            'illusion-of-transparency .'
+            '. notan'
+            'photoshop .'
+            '. zodiac';
         max-width: 800px;
         height: auto;
         margin: 0 auto;

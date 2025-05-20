@@ -11,15 +11,17 @@
 
 <body>
     <div class="layout">
-        <h1 id="wendy"> <a href="index.html"> Wendy Dong </a> </h1>
-        <a> <img class="menu" onclick="openNav()" src="images/menu.svg" alt="menu icon"> </a>
-        <nav id="mysidenav" class="sidenav">
-            <a href="resume.html"> RESUME </a>
-            <a href="index.html"> HOME </a>
-            <a href="creatives.html"> CREATIVES </a>
-            <a href="aboutme.html"> ABOUT </a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x </a>
-        </nav>
+        <div class="navbar">
+            <h1 id="wendy"> <a href="index.html"> Wendy Dong </a> </h1>
+            <a> <img class="menu" onclick="openNav()" src="images/menu.svg" alt="menu icon"> </a>
+            <nav id="mysidenav" class="sidenav">
+                <a href="index.html"> PORTFOLIO </a>
+                <a href="about.html"> ABOUT </a>
+                <a href="others.html"> OTHERS </a>
+                <a href="resume.html"> RESUME </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x </a>
+            </nav>
+        </div>
         <header class="main">
             <h1> Wendy Dong </h1>
             <div class="quote">
@@ -31,8 +33,8 @@
                 career. </p>
         </header>
         <main class="creatives">
-            <section class="zara">
-                <a href="zara.html">
+            <div class="container">
+                <button id="zara-button" class="zara">
                     <h2> Zara </h2>
                     <div>
                         <p> <b> September 2024 | UI/UX Design </b> </p>
@@ -46,11 +48,11 @@
                             <li> PROTOTYPING </li>
                         </ul>
                     </div>
-                    <img src="images/zara.png" alt="zara" width="600" height="400">
-                </a>
-            </section>
-            <section class="mono">
-                <a href="zara.html">
+                    <div id="zara-hero">
+                        <img src="images/zara.png" alt="zara" width="600" height="400">
+                    </div>
+                </button>
+                <button id="mono-button" class="mono">
                     <h2> Monochromatic Missions </h2>
                     <div>
                         <p> <b> March 2025 | UI/UX Design </b> </p>
@@ -64,11 +66,13 @@
                             <li> PROTOTYPING </li>
                         </ul>
                     </div>
-                    <img src="images/mono.png" alt="monochromatic missions" width="1416" height="875">
-                </a>
-            </section>
-            <section class="dragonventure">
-                <a href="dragonventure.html">
+                    <div id="mono-hero">
+                        <img src="images/mono.png" alt="monochromatic missions" width="1416" height="875">
+                    </div>
+                </button>
+            </div>
+            <div class="container">
+                <button id="dragon-button" class="dragonventure">
                     <h2> Dragon Venture </h2>
                     <div>
                         <p> <b> May 2023 | Product Design </b> </p>
@@ -84,15 +88,15 @@
                             <li> PROTOTYPING </li>
                         </ul>
                     </div>
-                    <img src="images/Dragon-Venture-fixed.jpg" alt="dragon venture image" width="600" height="875">
-                </a>
-            </section>
-            <section class="thephoenixlantern">
-                <a href="thephoenixlantern.html">
+                    <img id="dragon-hero" src="images/Dragon-Venture-fixed.jpg" alt="dragon venture image" width="600"
+                        height="875">
+                </button>
+                <button id="phoenix-button" class="thephoenixlantern">
                     <h2> The Phoenix Lantern </h2>
                     <div>
                         <p> <b> May 2023 | Product Design </b> </p>
-                        <p> Translated abstract emotions and concepts into visual cues of an innovative product. </p>
+                        <p> Translated abstract emotions and concepts into visual cues of an innovative product.
+                        </p>
                         <ul>
                             <li> PRODUCT DESIGN </li>
                             <li> PRODUCT RESEARCH </li>
@@ -101,10 +105,10 @@
                             <li> PROTOTYPING </li>
                         </ul>
                     </div>
-                    <img src="images/The-Phoenix-Lantern-fixed.jpg" alt="the phoenix lantern image" width="600"
-                        height="338">
-                </a>
-            </section>
+                    <img id="phoenix-hero" src="images/The-Phoenix-Lantern-fixed.jpg" alt="the phoenix lantern image"
+                        width="600" height="338">
+                </button>
+            </div>
         </main>
     </div>
     <footer>
