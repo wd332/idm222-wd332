@@ -586,7 +586,7 @@ header a {
 }
 
 @media screen and (min-width: 550px) {
-    /*.container {
+    .container {
         display: flex;
         flex-direction: row;
         max-width: 800px;
@@ -597,7 +597,7 @@ header a {
         }
     }
 
-    .skills {
+    /*.skills {
         display: flex;
     }
 
