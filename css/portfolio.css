@@ -585,8 +585,8 @@ header a {
     margin: 4.375rem auto 1.25rem;
 }
 
-/* @media screen and (min-width: 550px) {
-    .container {
+@media screen and (min-width: 550px) {
+    /*.container {
         display: flex;
         flex-direction: row;
         max-width: 800px;
@@ -692,8 +692,8 @@ header a {
         a {
             margin: 10px;
         }
-    }
-} */
+    } */
+}
 
 .about {
     h2 {
