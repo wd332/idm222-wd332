@@ -585,36 +585,7 @@ header a {
     margin: 4.375rem auto 1.25rem;
 }
 
-@media screen and (min-width: 550px) {
-
-    /*.zara {
-        grid-area: zara;
-    }
-
-    .mono {
-        grid-area: mono;
-    }
-
-    .dragonventure {
-        grid-area: dragonventure;
-    }
-
-    .thephoenixlantern {
-        grid-area: thephoenixlantern;
-    }
-
-    .creatives {
-        display: grid;
-        grid-template: auto / repeat(2, 1fr);
-        grid-template-areas:
-            'zara mono'
-            'dragonventure thephoenixlantern';
-        max-width: 800px;
-
-        button {
-            margin-left: 10px;
-            margin-right: 10px;
-        } */
+/* @media screen and (min-width: 550px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -629,73 +600,6 @@ header a {
     .skills {
         display: flex;
     }
-
-    /* .creatives-detail {
-        h3 {
-            margin-top: 0px;
-        }
-    } */
-
-    /*.target {
-        grid-area: target;
-    }
-
-    .target-image {
-        grid-area: target-image;
-    }
-
-    .research {
-        grid-area: research;
-    }
-
-    .research-image {
-        grid-area: research-image;
-    }
-
-    .ideations {
-        grid-area: ideations;
-    }
-
-    .ideations-image {
-        grid-area: ideations-image;
-    }
-
-    .conclusion {
-        grid-area: conclusion;
-    }
-
-    .locker {
-        grid-area: locker;
-    }
-
-    .lounge {
-        grid-area: lounge;
-    }
-
-    .app {
-        grid-area: app;
-    }
-
-    #reviews {
-        width: 50%;
-        display: block;
-    } */
-
-    /*.creative-specifics-layout {
-        display: grid;
-        grid-template: repeat(4, 1fr) / 2fr 1fr;
-        grid-template-areas:
-            'target target-image'
-            'research research-image'
-            'ideations ideations-image'
-            'conclusion .';
-    } */
-
-    /* .conclusion-image {
-        display: grid;
-        grid-template: 1fr / repeat(3, 1fr);
-        grid-template-areas: 'locker lounge app';
-    } */
 
     .subject {
         margin-top: 1.25rem;
@@ -736,16 +640,6 @@ header a {
         margin-left: 40px;
         width: 32%;
     }
-
-    /*.creatives-projects {
-        display: grid;
-        grid-template: auto / repeat(3, 1fr);
-        grid-template-areas:
-            'oneliketwo twolikeone illusion-of-transparency';
-        max-width: 800px;
-        height: auto;
-        margin: 0 auto;
-    } */
 
     .creatives-projects {
         display: grid;
@@ -799,7 +693,7 @@ header a {
             margin: 10px;
         }
     }
-}
+} */
 
 .about {
     h2 {
