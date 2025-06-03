@@ -597,11 +597,11 @@ header a {
         }
     }
 
-    /*.skills {
+    .skills {
         display: flex;
     }
 
-    .subject {
+    /*.subject {
         margin-top: 1.25rem;
     }
 
