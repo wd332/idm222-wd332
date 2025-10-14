@@ -601,7 +601,7 @@ header a {
         display: flex;
     }
 
-    /*.subject {
+    .subject {
         margin-top: 1.25rem;
     }
 
@@ -692,7 +692,7 @@ header a {
         a {
             margin: 10px;
         }
-    } */
+    }
 }
 
 .about {
