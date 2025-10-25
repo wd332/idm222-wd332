@@ -431,7 +431,6 @@ header a {
   border: 2px solid rgba(0, 123, 255, 0.2);
 }
 .creatives button {
-  all: unset;
   border-radius: 1.875rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 3.75rem auto -0.125rem;
