@@ -447,6 +447,8 @@ header a {
     }
 
     button {
+        all: unset;
+        color: black;
         border-radius: 1.875rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 3.75rem auto -0.125rem;
@@ -457,6 +459,8 @@ header a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
 
         img {
             border-radius: 1.875rem;
