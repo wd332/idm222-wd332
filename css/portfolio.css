@@ -62,7 +62,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: var(--lm-bg-color);
 }
 body .layout {
   margin: 0 10px;
