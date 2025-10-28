@@ -6,6 +6,14 @@ function closeNav() {           // closes the side navigation
     document.getElementById("mysidenav").classList.remove("open"); // removes open class css to it to close it
 }
 
+let rocket_obj = document.getElementById("rocket-button");
+
+rocket_obj.addEventListener("click", rocket_info);
+
+function rocket_info(url) {
+    window.open('rocketship.html', '_self');
+}
+
 // create an object linked to the id
 let zara_obj = document.getElementById("zara-button");
 

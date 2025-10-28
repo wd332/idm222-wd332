@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Website Redesign</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="navbar">
+            <h1 id="wendy"> <a href="index.html"> Wendy Dong </a> </h1>
+            <a> <img class="menu" onclick="openNav()" src="images/menu.svg" alt="menu icon"> </a>
+            <nav id="mysidenav" class="sidenav">
+                <a href="index.html"> PORTFOLIO </a>
+                <a href="about.html"> ABOUT </a>
+                <a href="others.html"> OTHERS </a>
+                <a href="resume.html"> RESUME </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x </a>
+            </nav>
+        </div>
+        <header>
+            <h1> Rocketship </h1>
+        </header>
+        <main class="creatives-detail">
+            <ul>
+                <li> RESEARCHING </li>
+                <li> WIREFRAMING </li>
+                <li> IDEATION </li>
+                <li> MICROINTERACTIONS </li>
+                <li> PROTOTYPING </li>
+            </ul>
+            <div class="creatives-intro">
+                <p> As part of a pre-seed startup initiative during my 10-week internship at Coded By:, our team was
+                    tasked with researching, validating, and designing a digital product that addressed a significant
+                    business problem with market potential.</p>
+                <p>Our initial concept centered around an event collaboration platform for small business owners — a
+                    space
+                    where local brands could connect and co-host marketing events to expand reach and share audiences.
+                </p>
+                <p>After several weeks of development and mentor feedback, we were advised that our approach, while
+                    well-designed, was too narrow to appeal to a broader user base or investor interest. In response, we
+                    pivoted our product direction into a comprehensive marketing campaign builder MVP, enabling users to
+                    create, manage, and track campaigns across multiple channels such as events, social media, and
+                    email.</p>
+                <p>This case study walks
+                    through that process — from research and design to
+                    adaptation and final delivery.</p>
+            </div>
+            <h3> My Role </h3>
+            <p> I was the UI/UX Designer in this 4-people project, with the others being a designer, PM, and devloper. I
+                worked on research, wireframing, ideation,
+                design, and interactions. </p>
+            <div class="creative-specifics-layout">
+                <div class="research">
+                    <h3> Research </h3>
+                    <p> Because this project was aimed at pre-seed readiness, we began researching on what kind of
+                        problems are out there, and seeing if those problems are viable enough to be tackled. Our goal
+                        was to ensure that the pain point we addressed was large enough to
+                        justify early-stage funding.
+                    </p>
+                    <p> <u>Initial Goals:</u> </p>
+                    <ul>
+                        <li> Research on problems to pinpoint what is causing it through articles, blogs, and utilizing
+                            the 5 Why Method</li>
+                        <li> Validate the problems back by creating statements and finding 5 or more articles to prove
+                            it's real</li>
+                        <li> Calculate potential earnings through potential users and solutions already in the market
+                        </li>
+                    </ul>
+                    <p> The card sort exercise conducted showed that testers would like to see the reviews of the
+                        products and additional items in the navigation to enhance the site.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500"
+                        src="https://embed.figma.com/board/rwO7qvq3mdcjD5vqHjtVAn/Card-Sorting-Activity?node-id=7179-1742&embed-host=share"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- <div class="target">
+                    <h3> Target Audience </h3>
+                    <p> Zara's shoppers are between the ages 18-40, which mean they would be in the generations that are
+                        already exposed to the digital world and have some experiences in technology. They are catered
+                        towards those that are fashion conscious with medium to high income. </p>
+                    <p> In the user persona of Christine, a college student majoring in Fashion Design, she experiences
+                        <u>pain points</u> from stress in the eye from images being too big and prices not shown right
+                        away.
+                    </p>
+                </div>
+                <div class="target-image">
+                    <img srcset="images/user-persona.png 900w, images/user-persona-fixed.webp 800w"
+                        sizes="(min-width: 550px) 50vw, 100vw" src="images/user-persona-fixed.webp" alt="user persona"
+                        width="800" height="450">
+                </div> -->
+                <div class="ideations">
+                    <h3>Initial Solution - Event Collaboration Platform </h3>
+                    <p> Our first concept focused on enabling small businesses to discover partners, co-create event
+                        listings with AI assistence, and promote them collaboratively.</p>
+                    <p> As one of two UI/UX designers, I focused on translating our research insights into intuitive
+                        flows and interface designs.</p>
+                    <p> <u>My Contributions Include:</u> </p>
+                    <ul>
+                        <li> Designing the IA and storyboard of how the user would go through each process</li>
+                        <li> Building multiple versions of wireframes and low-fidelity prototypes in Figma</li>
+                        <li> Created the Business Profile page, Contacts page, and AI page </li>
+                        <li> Assisting my co-designer in understanding reasons behind out webpages</li>
+                        <li> Create and assisted in microinteractions</li>
+                    </ul>
+                </div>
+                <div class="ideations">
+                    <h3>Design &amp; Prototyping </h3>
+                    <h4> 1st Wireframe </h4>
+                    <p> Since this was a collaboration platform, there had to be a way for people to find each other. In
+                        businesses, people would give each other business cards. I thought it would be great to
+                        introduce new people to users in such a way. I also wanted to make it easy for users to view
+                        information without a lot of distractions from the side, so my initial wireframe had the cards
+                        in the middle with some embellishments on the side for visuals.</p>
+                    <p> The problem with this is that there is still too much white space, so it wasn't feasible. </p>
+                    <img src="images/rocket-wireframe1.png" alt="business profile wireframe" width="1280" height="1499">
+                    <h4> 2nd Wireframe </h4>
+                    <p> In my second wireframe, I attempted a grid layout to fill in those whitespace. However the
+                        problem now is that information is overwhelming for the user to absorb and it feels very dead
+                        with how static it feels. </p>
+                    <img src="images/rocket-wireframe2.png" alt="business profile wireframe" width="1280" height="1499">
+                    <h4> 3rd Wireframe </h4>
+                    <p> In my third wireframe, I decided to shrink the card so that there's less information for the
+                        user to see, but still enough to garner interest for them to click to view more information
+                        about their potential business collaborators. There would also be a "Recommendations" at the top
+                        that would complement the business the user has. </p>
+                    <p> Even when things got smaller, it still felt dead and static. Furthermore, making it smaller
+                        didn't change the fact it was still overwhelming. I decided to look at home Airnbnb did things
+                        and big pictures helped balance things out. </p>
+                    <img src="images/rocket-wireframe3.png" alt="business profile wireframe" width="1280" height="513">
+                    <h4> 4th Wireframe </h4>
+                    <p> I tried a new approach on things and decided to give more space on the top as a
+                        breathing space, but also so there's a clear indication that this is the business page. I also
+                        added a search bar for easier navigation in case the filters doesn't have exactly what the user
+                        wants. </p>
+                    <p> I expanded my small profile picture image from the small card into one that expands and takes up
+                        the whole card. I also added an arrow so that things could continue on as a carousel.</p>
+                    <p> Still, I wished it was more dynamic and had the focus I originally wanted from my first
+                        wireframe. </p>
+                    <img src="images/rocket-wireframe4.png" alt="business profile wireframe" width="1280" height="818">
+                    <h4> 5th Wireframe </h4>
+                    <p> To create that focus that I want, I played with microinteractions. The middle card would always
+                        be larger than the other cards to create a hierarchy and allow users to focus on the middle one.
+                        When users click on the arrow, it will create a fluid movement going from one card to the next,
+                        expanding and shrinking. </p>
+                    <img src="images/rocket-wireframe5.png" alt="business profile wireframe" width="1280" height="364">
+
+                    <p></p>
+                </div>
+                <div id="reviews" class="ideations-image">
+                    <img src="images/zara-layout.png" alt="zara prototype" width="1406" height="867">
+                    <img src="images/zara-reviews.png" alt="zara prototype" width="1368" height="837">
+                </div>
+                <div class="conclusion">
+                    <h3> Results &amp; Outcomes </h3>
+                    <p> <u>Conclusion/Modified Goals:</u> </p>
+                    <ul>
+                        <li> Changed the layout in a way that fits more with Zara's image of being avant garde through
+                            using a parallax grid system </li>
+                        <li> Created a way to inform the pricing of the item in the same page </li>
+                        <li> Shrunk images to fit the screen so that it won't overwhelm the user </li>
+                        <li> Added a reviews section for users to see quickly as they are scrolling </li>
+                        <li> Deleted some sections in the homepage that was unnecessary and added prices for some items
+                            there </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conclusion-image">
+                <img src="images/zara.png" alt="zara" width="600" height="400">
+                <h3 id="figma"> View Figma Prototypes: </h3>
+                <div class="prototype-link">
+                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A368&node-id=10-258&p=f&viewport=303%2C727%2C0.09&t=VfRgXnQfNzyP2ohu-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A375"
+                        target="_blank"> Desktop </a>
+                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A372&node-id=1-378&viewport=-2361%2C78%2C0.9&t=IMxvSaP9tVFt10GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A378&show-proto-sidebar=1"
+                        target="_blank"> Tablet </a>
+                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A373&node-id=102-225&p=f&viewport=217%2C316%2C0.12&t=7muaS9er7seWoAwE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A74"
+                        target="_blank"> Phone </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="contactinfo">
+            <a href="mailto:wd332@drexel.edu" target="_blank">
+                <img class="mail" src="images/mail.svg" alt="mail icon">
+            </a>
+            <a href="https://linkedin.com/in/wendy-dong-3060a3269" target="_blank">
+                <img class="linkedin" src="images/linkedin.svg" alt="linkedin icon">
+            </a>
+            <a href="https://github.com/wd332" target="_blank">
+                <img class="github" src="images/github.svg" alt="github icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
