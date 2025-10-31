@@ -417,6 +417,12 @@ header a {
     margin: 0 auto;
 }
 
+#rocket-hero {
+    background-color: rgb(44 37 133);
+    border-radius: 1.875rem;
+    padding: 0;
+}
+
 #zara-hero {
     background: linear-gradient(to right, #0b0a09, #b78974);
     border-radius: 1.875rem;
@@ -432,6 +438,11 @@ header a {
     max-width: 800px;
     height: auto;
     margin: 0 auto;
+
+    .rocket {
+        background-color: rgb(112 101 255 / 30%);
+        border: 2px solid rgb(19 0 255 / 30%);
+    }
 
     .zara {
         background-color: rgb(171 128 108 / 30%);
@@ -453,7 +464,8 @@ header a {
         border: 2px solid rgba(0, 123, 255, 0.2);
     }
 
-    button {
+    button,
+    a {
         all: unset;
         border-radius: 1.875rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -477,7 +489,8 @@ header a {
         border: 1px solid red;
     }*/
 
-    button:hover {
+    button:hover,
+    a:hover {
         transform: scale(1.03);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -599,7 +612,8 @@ header a {
         flex-direction: row;
         max-width: 800px;
 
-        button {
+        button,
+        a {
             flex: 1;
             margin: 10px;
         }
