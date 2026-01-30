@@ -71,6 +71,9 @@
 
 body {
     background-color: var(--lm-bg-color);
+    /* background: linear-gradient(180deg, #667eea 0%, #c9f1fc 50%); */
+    /* #f3c8f9 100% */
+    background-attachment: fixed;
 
     .layout {
         margin: 0 10px;
@@ -136,15 +139,25 @@ img {
 } */
 
 .navbar {
-    /* why is this not showing? */
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--lm-bg-color);
-    border-bottom: 2px solid var(--lm-secondary-element-color);
+    background-color: var(--lm-prominent-element-color);
+    /* border-bottom: 2px solid var(--lm-secondary-element-color); */
     z-index: 1;
     width: 100%;
-    height: 60px;
+    height: 70px;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #C9F1FF);
+    pointer-events: none;
 }
 
 #wendy {
@@ -153,14 +166,14 @@ img {
     left: 12px;
     top: 23px;
     margin: 0;
-    background-color: var(--lm-bg-color);
+    background-color: var(--lm-prominent-element-color);
 
     a:link {
-        color: var(--black-text-color);
+        color: var(--white-text-color);
     }
 
     a:visited {
-        color: var(--black-text-color);
+        color: var(--white-text-color);
     }
 }
 
@@ -171,7 +184,7 @@ img {
     right: 12px;
     top: 17px;
     border-radius: 8px;
-    background-color: var(--lm-bg-color);
+    background-color: var(--lm-prominent-element-color);
 }
 
 .sidenav {
@@ -179,7 +192,7 @@ img {
     width: 0;
     /* makes the sidebar hidden */
     position: fixed;
-    /*z-index: 2;*/
+    z-index: 2;
     top: 0;
     right: 0;
     background-color: #ffffff;
@@ -198,6 +211,16 @@ img {
     transition: 0.3s;
 }
 
+.sidenav a.nav-sub {
+    padding-left: 48px;
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+.sidenav a.nav-sub:nth-of-type(2) {
+    margin-top: 10px;
+}
+
 .closebtn {
     font-size: 36px;
     color: white;
@@ -212,6 +235,16 @@ img {
     /* targets classes with sidenav and open in it */
     /* makes the sidebar appear */
     width: 250px;
+}
+
+.nav-section {
+    font-family: "Quicksand";
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    padding-left: 32px;
+    cursor: default;
 }
 
 nav {
@@ -242,6 +275,11 @@ nav {
         color: var(--black-text-color);
     }
 
+}
+
+.external-icon {
+    font-size: 0.8em;
+    opacity: 0.6;
 }
 
 .creatives-detail {
@@ -417,16 +455,26 @@ header a {
     margin: 0 auto;
 }
 
+#hell-hero,
+#micro-hero,
+#rocket-hero,
+#zara-hero,
+#whisps {
+    padding: 0;
+}
+
+#micro-hero {
+    object-fit: cover;
+}
+
 #rocket-hero {
     background-color: rgb(44 37 133);
     border-radius: 1.875rem;
-    padding: 0;
 }
 
 #zara-hero {
     background: linear-gradient(to right, #0b0a09, #b78974);
     border-radius: 1.875rem;
-    padding: 0;
 }
 
 #mono-hero {
@@ -442,26 +490,49 @@ header a {
     .rocket {
         background-color: rgb(112 101 255 / 30%);
         border: 2px solid rgb(19 0 255 / 30%);
+        cursor: pointer;
+    }
+
+    .micro {
+        background-color: #454545;
+        border: 2px solid rgb(0 0 0);
+        cursor: pointer;
+    }
+
+    .hell {
+        background-color: rgb(171 3 3 / 50%);
+        border: 2px solid rgb(255 12 12 / 60%);
+        cursor: pointer;
+    }
+
+    .whisps {
+        background-color: #e095c4a6;
+        border: 2px solid rgb(190 23 195 / 60%);
+        cursor: pointer;
     }
 
     .zara {
         background-color: rgb(171 128 108 / 30%);
         border: 2px solid rgb(2 1 1 / 20%);
+        cursor: pointer;
     }
 
     .mono {
         background-color: rgb(51 142 250 / 13%);
         border: 2px solid rgb(52 143 251 / 34%);
+        cursor: pointer;
     }
 
     .dragonventure {
         background-color: rgb(138 43 226 / 13%);
         border: 2px solid rgba(138, 43, 226, 0.2);
+        cursor: pointer;
     }
 
     .thephoenixlantern {
         background-color: rgb(51 128 208 / 13%);
         border: 2px solid rgba(0, 123, 255, 0.2);
+        cursor: pointer;
     }
 
     button,
@@ -530,6 +601,12 @@ header a {
         color: black;
     }
 
+    a.micro:link,
+    a.micro:visited,
+    a.micro:hover {
+        color: white;
+    }
+
     ul {
         max-width: 600px;
         height: auto;
@@ -575,9 +652,10 @@ header a {
     }
 }
 
-.filter {
-    width: 200px;
+.category {
     margin: 30px auto 30px;
+    display: flex;
+    justify-content: center;
 
     a {
         /*background-color: var(--lm-bg-color);
@@ -591,12 +669,18 @@ header a {
         padding: 0.25rem 0.75rem;
         transition: 0.3s ease-in-out;
     }
+}
 
-    a:hover {
-        transform: scale(20);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.category a:not(.active):hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    }
+.category a.active {
+    background: #1A6A8A;
+    transform: none;
+    box-shadow: none;
+    cursor: default;
 }
 
 .subject {
