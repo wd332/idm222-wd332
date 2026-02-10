@@ -711,9 +711,14 @@ header a {
         margin-top: 1.25rem;
     }
 
+    #drexel {
+        grid-area: drexel;
+        margin-right: 40px;
+    }
+
     #oneliketwo {
         grid-area: oneliketwo;
-        margin-right: 40px;
+        margin-left: 40px;
     }
 
     #oneliketwo-desc {
@@ -722,28 +727,28 @@ header a {
 
     #twolikeone {
         grid-area: twolikeone;
-        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #illusion-of-transparency {
         grid-area: illusion-of-transparency;
-        margin-right: 40px;
+        margin-left: 40px;
     }
 
     #notan {
         grid-area: notan;
-        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #photoshop {
         grid-area: photoshop;
-        margin-right: 40px;
+        margin-left: 40px;
         width: 60%;
     }
 
     #zodiac {
         grid-area: zodiac;
-        margin-left: 40px;
+        margin-right: 40px;
         width: 32%;
     }
 
@@ -752,12 +757,13 @@ header a {
         row-gap: 60px;
         grid-template: auto / repeat(2, 1fr);
         grid-template-areas:
-            'oneliketwo oneliketwo-desc'
-            '. twolikeone'
-            'illusion-of-transparency .'
-            '. notan'
-            'photoshop .'
-            '. zodiac';
+            'drexel .'
+            'oneliketwo-desc oneliketwo'
+            'twolikeone .'
+            '. illusion-of-transparency'
+            'notan .'
+            '. photoshop'
+            'zodiac .';
         max-width: 800px;
         height: auto;
         margin: 0 auto;
