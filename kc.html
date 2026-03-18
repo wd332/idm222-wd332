@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC's Fresh Fruit and Smoothies</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="navbar">
+            <h1 id="wendy"> <a href="index.html"> Wendy Dong </a> </h1>
+            <a> <img class="menu" onclick="openNav()" src="images/menu.svg" alt="menu icon"> </a>
+            <nav id="mysidenav" class="sidenav">
+                <a href="index.html"> HOME </a>
+
+                <span class="nav-section">WORK</span>
+                <a href="uiux.html" class="nav-sub"> UI/UX </a>
+                <a href="dev.html" class="nav-sub"> DEVELOPMENT </a>
+                <a href="product.html" class="nav-sub"> PRODUCT </a>
+
+                <a href="about.html"> ABOUT </a>
+                <a href="others.html"> OTHERS </a>
+                <a href="resume.html"> RESUME </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x </a>
+            </nav>
+        </div>
+        <header>
+            <h1> KC's Fresh Fruit and Smoothies Case Study </h1>
+        </header>
+        <main class="creatives-detail">
+            <ul>
+                <li> PROJECT MANAGEMENT </li>
+                <li> DEVELOPMENT </li>
+                <li> PHP </li>
+                <li> MYSQL </li>
+                <li> MICROINTERACTIONS </li>
+            </ul>
+            <p class="creatives-intro">
+                This project focused on improving the ordering experience for KC's Fresh Fruit and Smoothies, a popular
+                food truck serving students around Drexel University. Despite its strong reputation, the stand operated
+                on a cash-only, in-person system that often led to long wait times during peak hours. Over the course of
+                three months, our team, 4 Corners, designed and developed a mobile app that allows students to order
+                ahead through a simple, intuitive interface, reducing time spent waiting while maintaining the quick,
+                casual nature of the food truck experience.</p>
+            <h3> My Role </h3>
+            <p> I served as the primary project manager and secondary developer throughout the project. </p>
+            <p> As project manager, I was responsible for tracking task completion, organizing meetings, and ensuring we
+                stayed on track across the three-month timeline. I kept the project aligned with our core goal of
+                simplifying the ordering experience. </p>
+            <p> As a secondary developer, I contributed to building the app, supporting implementation decisions, and
+                helping translate our design ideas into a functional product. </p>
+            <div class="creative-specifics-layout">
+                <div class="target">
+                    <h3> Context & Challenge </h3>
+                    <p> KC's Fresh Fruit and Smoothies operates in a fast-paced campus environment where high demand and
+                        a cash-only, in-person system create friction for both customers and the vendor, especially
+                        during peak hours. As a team of four, we worked over three months to address this challenge by
+                        focusing on how to reduce wait times without disrupting KC’s existing workflow. The core problem
+                        was the lack of an efficient ordering system, making it difficult for students to quickly grab
+                        food between classes and for KC to manage large volumes of orders. Our goal was to design a
+                        solution that streamlined the process through quick, intuitive ordering and clear pickup
+                        identification, with success measured by how seamlessly it fit into real-world use while
+                        improving speed and overall experience. </p>
+                </div>
+                <div class="target-image">
+                    <img srcset="images/user-persona.png 900w, images/user-persona-fixed.webp 800w"
+                        sizes="(min-width: 550px) 50vw, 100vw" src="images/user-persona-fixed.webp" alt="user persona"
+                        width="800" height="450">
+                </div>
+                <div class="research">
+                    <h3> Research </h3>
+                    <p> My goal in this research was to understand the pain points through user persona, how people
+                        group elements together through card sorting/sitemapping, and additional feedback from testers
+                        that want to
+                        be incorporated.
+                    </p>
+                    <p> <u>Initial Goals:</u> </p>
+                    <ul>
+                        <li> Create a way to inform the pricing of something to the user without the need to go to a
+                            different page </li>
+                        <li> Shrink the images to fit the screen so that it won't overwhelm the user </li>
+                    </ul>
+                    <p> The card sort exercise conducted showed that testers would like to see the reviews of the
+                        products and additional items in the navigation to enhance the site.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500"
+                        src="https://embed.figma.com/board/rwO7qvq3mdcjD5vqHjtVAn/Card-Sorting-Activity?node-id=7179-1742&embed-host=share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="ideations">
+                    <h3> Design &amp; Prototyping </h3>
+                    <p> Focusing on users' pain points and simplifying their experience, I created prototypes that
+                        include their requests of having visible pricing and a snippet review section that can give
+                        users a quick glance on what it offers. </p>
+                    <p> To fit more with Zara's image of being avant garde and also reducing stress for the users' eyes,
+                        I changed their layout design to fit more in
+                        the style of the parallax grid system. </p>
+                    <p> There is also a reviews section added into the product details page to allow users to see more
+                        of what others have to say. </p>
+                    <p> Zara's checkout process was shrunken to one page compared to their original design that had
+                        multiple pages, creating more work than necessary for the user. </p>
+                </div>
+                <div id="reviews" class="ideations-image">
+                    <img src="images/zara-layout.png" alt="zara prototype" width="1406" height="867">
+                    <img src="images/zara-reviews.png" alt="zara prototype" width="1368" height="837">
+                </div>
+                <div class="conclusion">
+                    <h3> Results &amp; Outcomes </h3>
+                    <p> <u>Conclusion/Modified Goals:</u> </p>
+                    <ul>
+                        <li> Changed the layout in a way that fits more with Zara's image of being avant garde through
+                            using a parallax grid system </li>
+                        <li> Created a way to inform the pricing of the item in the same page </li>
+                        <li> Shrunk images to fit the screen so that it won't overwhelm the user </li>
+                        <li> Added a reviews section for users to see quickly as they are scrolling </li>
+                        <li> Deleted some sections in the homepage that was unnecessary and added prices for some items
+                            there </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conclusion-image">
+                <img src="images/zara.png" alt="zara" width="600" height="400">
+                <h3 id="figma"> View Figma Prototypes: </h3>
+                <div class="prototype-link">
+                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A368&node-id=10-258&p=f&viewport=303%2C727%2C0.09&t=VfRgXnQfNzyP2ohu-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A375"
+                        target="_blank"> Desktop </a>
+                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A372&node-id=1-378&viewport=-2361%2C78%2C0.9&t=IMxvSaP9tVFt10GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A378&show-proto-sidebar=1"
+                        target="_blank"> Tablet </a>
+                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A373&node-id=102-225&p=f&viewport=217%2C316%2C0.12&t=7muaS9er7seWoAwE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A74"
+                        target="_blank"> Phone </a>
+                </div>
+                <!-- <div class="desktop">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                        src="https://embed.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A368&node-id=10-258&viewport=285%2C728%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A375&embed-host=share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="tablet">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                        src="https://embed.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A372&node-id=1-378&viewport=88%2C185%2C0.13&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A378&embed-host=share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="phone">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                        src="https://embed.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A373&node-id=102-225&viewport=-11%2C280%2C0.41&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A74&embed-host=share"
+                        allowfullscreen></iframe>
+                </div> -->
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="contactinfo">
+            <a href="mailto:wd332@drexel.edu" target="_blank">
+                <img class="mail" src="images/mail.svg" alt="mail icon">
+            </a>
+            <a href="https://linkedin.com/in/wendy-dong-3060a3269" target="_blank">
+                <img class="linkedin" src="images/linkedin.svg" alt="linkedin icon">
+            </a>
+            <a href="https://github.com/wd332" target="_blank">
+                <img class="github" src="images/github.svg" alt="github icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
