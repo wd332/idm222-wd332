@@ -367,6 +367,16 @@ video {
     }
 }
 
+.kc-image {
+    margin-top: 10px;
+}
+
+.research-image.kc-process {
+    padding-top: 0;
+    height: auto;
+    overflow: visible;
+}
+
 .research-image,
 .desktop,
 .tablet,

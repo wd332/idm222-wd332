@@ -46,7 +46,7 @@
                 three months, our team, 4 Corners, designed and developed a mobile app that allows students to order
                 ahead through a simple, intuitive interface, reducing time spent waiting while maintaining the quick,
                 casual nature of the food truck experience.</p>
-            <h3> My Role </h3>
+            <h3> My Roles </h3>
             <p> I served as the primary project manager and secondary developer throughout the project. </p>
             <p> As project manager, I was responsible for tracking task completion, organizing meetings, and ensuring we
                 stayed on track across the three-month timeline. I kept the project aligned with our core goal of
@@ -55,85 +55,113 @@
                 helping translate our design ideas into a functional product. </p>
             <div class="creative-specifics-layout">
                 <div class="target">
-                    <h3> Context & Challenge </h3>
+                    <!-- is it better to have my roles before or after context & challenges? -->
+                    <h3> Context &amp; Challenge </h3>
                     <p> KC's Fresh Fruit and Smoothies operates in a fast-paced campus environment where high demand and
                         a cash-only, in-person system create friction for both customers and the vendor, especially
-                        during peak hours. As a team of four, we worked over three months to address this challenge by
-                        focusing on how to reduce wait times without disrupting KC’s existing workflow. The core problem
-                        was the lack of an efficient ordering system, making it difficult for students to quickly grab
-                        food between classes and for KC to manage large volumes of orders. Our goal was to design a
-                        solution that streamlined the process through quick, intuitive ordering and clear pickup
-                        identification, with success measured by how seamlessly it fit into real-world use while
-                        improving speed and overall experience. </p>
-                </div>
-                <div class="target-image">
-                    <img srcset="images/user-persona.png 900w, images/user-persona-fixed.webp 800w"
-                        sizes="(min-width: 550px) 50vw, 100vw" src="images/user-persona-fixed.webp" alt="user persona"
-                        width="800" height="450">
+                        during peak hours. 4 Corners took on this challenge as we worked over three months to go from
+                        design to development of a fully functioning app that
+                        users can order from. Our goal was to design a solution that streamlined the process through
+                        quick, intuitive ordering and clear pickup
+                        identification. Success is measured by the app's reliability during testing, ensuring users
+                        could place orders without errors, move through the process without confusion, and experience
+                        accurate calculations during checkout.</p>
                 </div>
                 <div class="research">
-                    <h3> Research </h3>
-                    <p> My goal in this research was to understand the pain points through user persona, how people
-                        group elements together through card sorting/sitemapping, and additional feedback from testers
-                        that want to
-                        be incorporated.
+                    <h3> Process &amp; Insights</h3>
+                    <h4> Making The Tean Website & Landing Page </h4>
+                    <p> Before beginning any project, a solid foundation of who we are, design styles, and aligned goals
+                        are needed. I took in consideration of each members' feedback of what they want and created this
+                        colored coded animation of our roles, and the development of the site.
                     </p>
-                    <p> <u>Initial Goals:</u> </p>
-                    <ul>
-                        <li> Create a way to inform the pricing of something to the user without the need to go to a
-                            different page </li>
-                        <li> Shrink the images to fit the screen so that it won't overwhelm the user </li>
-                    </ul>
-                    <p> The card sort exercise conducted showed that testers would like to see the reviews of the
-                        products and additional items in the navigation to enhance the site.
-                    </p>
+                    <p>The challenge in this was making sure everyone's schedule aligned for meetings to continue
+                        iterations and discussions of final site before the deadline.</p>
+                    <!-- is it better to say "the challenge is" or "i learned to"-->
                 </div>
-                <div class="research-image">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500"
-                        src="https://embed.figma.com/board/rwO7qvq3mdcjD5vqHjtVAn/Card-Sorting-Activity?node-id=7179-1742&embed-host=share"
-                        allowfullscreen></iframe>
+                <div class="research-image kc-process">
+                    <img class="kc-image" src="images/kc-ideate.webp" alt="KC ideation" width="1107" height="869">
+                    <img class="kc-image" src="video/4corners-website.gif" alt="team website animation">
+                    <img class="kc-image" src="images/kc-landing.png" alt="KC landing page" width="1860" height="846">
                 </div>
+                <h4> Defining Microinteractions </h4>
+                <p> After designers created their initial prototype, I defined and coded all microinteractions within
+                    the critical path screens (ordering food and checking out). I used CodePen for easy integration into
+                    html when needed and kept the coding structure throughout so that little modification is needed in
+                    between, and making sure that everything is labeled well for flexbility and understanding when
+                    others may need it.</p>
+                <p> Biggest challenge in this was making sure the JavaScript worked well during each testing before
+                    moving on to the next part and learning how to integrate external fonts and icons into CodePen.</p>
+                <div class="research-image kc-process">
+                    <img class="kc-image" src="images/kc-size.webp" alt="KC size button" width="1500" height="624">
+                    <img class="kc-image" src="images/kc-addon.webp" alt="KC add on button" width="1500" height="628">
+                    <img class="kc-image" src="images/kc-ingredients.webp" alt="KC ingredients button" width="1500"
+                        height="628">
+                    <img class="kc-image" src="images/kc-popup.webp" alt="KC popup screen" width="1500" height="628">
+                </div>
+                <h4> Main Menu Records </h4>
+                <p> As the secondary developer, I assisted the primary developer with creating the backend of the app,
+                    which is the php database table that has all the records of the main menu. The goal was that it can
+                    select all check boxes, reset, and calculate any price made. </p>
+                <p> The challenge in this was understanding the code the primary developer made after handoff and making
+                    sure that my code didn't clash with theirs, while also making sure that my code was formatted in a
+                    way that the other developer can code the calculations with ease.</p>
+                <div class="research-image kc-process">
+                    <img class="kc-image" src="images/kc-menu.webp" alt="KC menu" width="1500" height="711">
+                    <img class="kc-image" src="images/kc-menu-code.webp" alt="KC menu code" width="1500" height="606">
+                </div>
+                <h4> Integrating Frontend &amp; Backend </h4>
+                <p> I worked on integrating the php from the database table into html of the home screen and the product
+                    details screen. Since
+                    the prototype only had the layout for the custom smoothie screen, I added in loops
+                    and IDs that will input the correct data based on the product the user selects. </p>
+                <p> I also double checked to make sure what I did matched the frontend site. One thing I came
+                    across was that the designers added product labelings that was not in the database, so I created id
+                    statements that will input it. I tested other screens to make sure there's no errors or CSS/design
+                    issues
+                    as well.
+                </p>
+                <div class="research-image kc-process">
+                    <img class="kc-image" src="images/kc-index.webp" alt="KC home screen" width="1500" height="726">
+                    <img class="kc-image" src="images/kc-index-code.webp" alt="KC home screen code" width="1500"
+                        height="683">
+                </div>
+                <p> The same technique was applied to the cropped version of the product images the designers later
+                    implemented.</p>
+                <div class="research-image kc-process">
+                    <img class="kc-image" src="images/kc-product1.webp" alt="KC product code 1" width="1500"
+                        height="710">
+                </div>
+                <p> I added if statements to support varying product layouts and because not all products have the same
+                    amount of options. </p>
+                <div class="research-image kc-process">
+                    <img class="kc-image" src="images/kc-product2.webp" alt="KC product code 2" width="1500"
+                        height="630">
+                    <img class="kc-image" src="images/kc-product3.webp" alt="KC product code 3" width="1500"
+                        height="569">
+                </div>
+                <p> The challenge in integration was making sure everything aligned with the design and to have constant
+                    communication and making sure everything is up to date between members. I also learned how to
+                    utilize if statements and IDs in different ways. </p>
                 <div class="ideations">
-                    <h3> Design &amp; Prototyping </h3>
-                    <p> Focusing on users' pain points and simplifying their experience, I created prototypes that
-                        include their requests of having visible pricing and a snippet review section that can give
-                        users a quick glance on what it offers. </p>
-                    <p> To fit more with Zara's image of being avant garde and also reducing stress for the users' eyes,
-                        I changed their layout design to fit more in
-                        the style of the parallax grid system. </p>
-                    <p> There is also a reviews section added into the product details page to allow users to see more
-                        of what others have to say. </p>
-                    <p> Zara's checkout process was shrunken to one page compared to their original design that had
-                        multiple pages, creating more work than necessary for the user. </p>
-                </div>
-                <div id="reviews" class="ideations-image">
-                    <img src="images/zara-layout.png" alt="zara prototype" width="1406" height="867">
-                    <img src="images/zara-reviews.png" alt="zara prototype" width="1368" height="837">
+                    <h3> The Solution </h3>
+                    <p> I communicated well with my team. When images were not found, I talked to the data architects
+                        for them. When the product labels might need change or when the order number was too small, I
+                        had discussions with the designers to make design decisions . As a co-developer, I had on going
+                        communication with the other developer to ensure nothing clashed and that all bugs were fixed
+                        with continuing testing in the final phase of this project.</p>
                 </div>
                 <div class="conclusion">
-                    <h3> Results &amp; Outcomes </h3>
-                    <p> <u>Conclusion/Modified Goals:</u> </p>
-                    <ul>
-                        <li> Changed the layout in a way that fits more with Zara's image of being avant garde through
-                            using a parallax grid system </li>
-                        <li> Created a way to inform the pricing of the item in the same page </li>
-                        <li> Shrunk images to fit the screen so that it won't overwhelm the user </li>
-                        <li> Added a reviews section for users to see quickly as they are scrolling </li>
-                        <li> Deleted some sections in the homepage that was unnecessary and added prices for some items
-                            there </li>
-                    </ul>
+                    <h3> The Results </h3>
+                    <p> In 3 months, my team, 4 Corners, conducted thorough user testing and interviews to ensure that
+                        users had a smooth navigation and experience using the app. Then, we created the frontend and
+                        backend code. In the end, we were able to create a fully functional app that allowed users to
+                        order food, make customizations, delete items, and make a purchase. </p>
                 </div>
             </div>
             <div class="conclusion-image">
-                <img src="images/zara.png" alt="zara" width="600" height="400">
-                <h3 id="figma"> View Figma Prototypes: </h3>
                 <div class="prototype-link">
-                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A368&node-id=10-258&p=f&viewport=303%2C727%2C0.09&t=VfRgXnQfNzyP2ohu-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A375"
-                        target="_blank"> Desktop </a>
-                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A372&node-id=1-378&viewport=-2361%2C78%2C0.9&t=IMxvSaP9tVFt10GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A378&show-proto-sidebar=1"
-                        target="_blank"> Tablet </a>
-                    <a href="https://www.figma.com/proto/B2RSM65CKXdbjZ3SemRRx5/IDM-212-002-wd332-Zara-FinalProject?page-id=1%3A373&node-id=102-225&p=f&viewport=217%2C316%2C0.12&t=7muaS9er7seWoAwE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A74"
-                        target="_blank"> Phone </a>
+                    <a href="https://digmstudents.westphal.drexel.edu/~an943/KC's/app/index.php" target="_blank"> KC's
+                        Fresh Fruit and Smoothies App </a>
                 </div>
                 <!-- <div class="desktop">
                     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
