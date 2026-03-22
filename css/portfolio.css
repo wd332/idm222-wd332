@@ -103,7 +103,7 @@ h3 {
 
 h4 {
     font-family: "Overlock";
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 1.5rem 1rem -0.625rem;
 }
@@ -114,6 +114,14 @@ p {
     font-weight: bold;
     line-height: 1.5rem;
     margin: 1rem;
+}
+
+figcaption {
+    font-family: "Overlock";
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
 }
 
 a {
@@ -282,6 +290,10 @@ nav {
     opacity: 0.6;
 }
 
+#overview {
+    margin-top: 10px;
+}
+
 .creatives-detail {
     max-width: 800px;
     height: auto;
@@ -319,7 +331,7 @@ nav {
 
     h3 {
         font-family: "Overlock";
-        font-size: 1.5625rem;
+        font-size: 1.8625rem;
         font-weight: bold;
         margin: 2.5rem 1rem -0.625rem;
     }

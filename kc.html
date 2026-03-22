@@ -40,20 +40,21 @@
                 <li> MYSQL </li>
                 <li> MICROINTERACTIONS </li>
             </ul>
-            <p class="creatives-intro">
-                This project focused on improving the ordering experience for KC's Fresh Fruit and Smoothies, a popular
-                food truck serving students around Drexel University. Despite its strong reputation, the stand operated
-                on a cash-only, in-person system that often led to long wait times during peak hours. Over the course of
-                three months, our team, 4 Corners, designed and developed a mobile app that allows students to order
-                ahead through a simple, intuitive interface, reducing time spent waiting while maintaining the quick,
-                casual nature of the food truck experience.</p>
-            <h3> My Roles </h3>
-            <p> I served as the primary project manager and secondary developer throughout the project. </p>
-            <p> As project manager, I was responsible for tracking task completion, organizing meetings, and ensuring we
-                stayed on track across the three-month timeline. I kept the project aligned with our core goal of
-                simplifying the ordering experience. </p>
-            <p> As a secondary developer, I contributed to building the app, supporting implementation decisions, and
-                helping translate our design ideas into a functional product. </p>
+            <div class="creatives-intro">
+                <h3 id="overview"> The Overview</h3>
+
+                <p>
+                    This project focused on improving the ordering experience for KC's Fresh Fruit and Smoothies, a
+                    popular
+                    food truck serving students around Drexel University. Despite its strong reputation, the stand
+                    operated
+                    on a cash-only, in-person system that often led to long wait times during peak hours. Over the
+                    course of
+                    three months, our team, 4 Corners, designed and developed a mobile app that allows students to order
+                    ahead through a simple, intuitive interface, reducing time spent waiting while maintaining the
+                    quick,
+                    casual nature of the food truck experience.</p>
+            </div>
             <div class="creative-specifics-layout">
                 <div class="target">
                     <!-- is it better to have my roles before or after context & challenges? -->
@@ -68,6 +69,15 @@
                         could place orders without errors, move through the process without confusion, and experience
                         accurate calculations during checkout.</p>
                 </div>
+                <h3> My Roles </h3>
+                <p> I served as the primary project manager and secondary developer throughout the project. </p>
+                <p> As project manager, I was responsible for tracking task completion, organizing meetings, and
+                    ensuring we
+                    stayed on track across the three-month timeline. I kept the project aligned with our core goal of
+                    simplifying the ordering experience. </p>
+                <p> As a secondary developer, I contributed to building the app, supporting implementation decisions,
+                    and
+                    helping translate our design ideas into a functional product. </p>
                 <div class="research">
                     <h3> Process &amp; Insights</h3>
                     <h4> Making The Team Website & Landing Page </h4>
@@ -93,11 +103,34 @@
                 <p> Biggest challenge in this was making sure the JavaScript worked well during each testing before
                     moving on to the next part and learning how to integrate external fonts and icons into CodePen.</p>
                 <div class="research-image kc-process">
-                    <img class="kc-image" src="images/kc-size.webp" alt="KC size button" width="1500" height="624">
-                    <img class="kc-image" src="images/kc-addon.webp" alt="KC add on button" width="1500" height="628">
-                    <img class="kc-image" src="images/kc-ingredients.webp" alt="KC ingredients button" width="1500"
-                        height="628">
-                    <img class="kc-image" src="images/kc-popup.webp" alt="KC popup screen" width="1500" height="628">
+                    <figure>
+                        <a href="https://codepen.io/wd332/pen/jErZyvL" target="_blank">
+                            <img class="kc-image" src="images/kc-size.webp" alt="KC size button" width="1500"
+                                height="624">
+                            <figcaption>Size Button Microinteraction</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://codepen.io/wd332/pen/WbxJKXN" target="_blank">
+                            <img class="kc-image" src="images/kc-addon.webp" alt="KC add on button" width="1500"
+                                height="628">
+                            <figcaption>Add On Button Microinteraction</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://codepen.io/wd332/pen/zxBjLoN" target="_blank">
+                            <img class="kc-image" src="images/kc-ingredients.webp" alt="KC ingredients button"
+                                width="1500" height="628">
+                            <figcaption>Ingredients Button Microinteraction</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://codepen.io/wd332/pen/pvbOOay" target="_blank">
+                            <img class="kc-image" src="images/kc-popup.webp" alt="KC popup screen" width="1500"
+                                height="628">
+                            <figcaption>Popup Microinteraction</figcaption>
+                        </a>
+                    </figure>
                 </div>
                 <h4> Main Menu Records </h4>
                 <p> As the secondary developer, I assisted the primary developer with creating the backend of the app,
@@ -108,7 +141,14 @@
                     way that the other developer can code the calculations with ease.</p>
                 <div class="research-image kc-process">
                     <img class="kc-image" src="images/kc-menu.webp" alt="KC menu" width="1500" height="711">
-                    <img class="kc-image" src="images/kc-menu-code.webp" alt="KC menu code" width="1500" height="606">
+                    <figure>
+                        <a href="https://github.com/Ashleyn943/2601-idm216-KCs-Fresh-Fruit-and-Smoothies-App/blob/main/php_code/order.php"
+                            target="_blank">
+                            <img class="kc-image" src="images/kc-menu-code.webp" alt="KC menu code" width="1500"
+                                height="606">
+                            <figcaption>Menu Order Code</figcaption>
+                        </a>
+                    </figure>
                 </div>
                 <h4> Integrating Frontend &amp; Backend </h4>
                 <p> I worked on integrating the php from the database table into html of the home screen and the product
@@ -116,35 +156,44 @@
                     the prototype only had the layout for the custom smoothie screen, I added in loops
                     and IDs that will input the correct data based on the product the user selects. </p>
                 <p> I also double checked to make sure what I did matched the frontend site. One thing I came
-                    across was that the designers added product labelings that was not in the database, so I created id
-                    statements that will input it. I tested other screens to make sure there's no errors or CSS/design
-                    issues
-                    as well.
+                    across was that the designers added product labelings that was not in the database, so I created if
+                    statements that will input it. The same technique was applied to the cropped version of the product
+                    images the designers later
+                    implemented. I tested other screens to make sure there's no errors or CSS/design
+                    issues as well.
                 </p>
                 <div class="research-image kc-process">
                     <img class="kc-image" src="images/kc-index.webp" alt="KC home screen" width="1500" height="726">
-                    <img class="kc-image" src="images/kc-index-code.webp" alt="KC home screen code" width="1500"
-                        height="683">
-                </div>
-                <p> The same technique was applied to the cropped version of the product images the designers later
-                    implemented.</p>
-                <div class="research-image kc-process">
-                    <img class="kc-image" src="images/kc-product1.webp" alt="KC product code 1" width="1500"
-                        height="710">
+                    <figure>
+                        <a href="https://github.com/Ashleyn943/2601-idm216-KCs-Fresh-Fruit-and-Smoothies-App/blob/main/KC2/index.php"
+                            target="_blank">
+                            <img class="kc-image" src="images/kc-index-code.webp" alt="KC home screen code" width="1500"
+                                height="683">
+                            <figcaption>Home Screen Code</figcaption>
+                        </a>
+                    </figure>
                 </div>
                 <p> I added if statements to support varying product layouts and because not all products have the same
                     amount of options. </p>
                 <div class="research-image kc-process">
-                    <img class="kc-image" src="images/kc-product2.webp" alt="KC product code 2" width="1500"
-                        height="630">
-                    <img class="kc-image" src="images/kc-product3.webp" alt="KC product code 3" width="1500"
-                        height="569">
+                    <figure>
+                        <a href="https://github.com/Ashleyn943/2601-idm216-KCs-Fresh-Fruit-and-Smoothies-App/blob/main/KC2/customize.php"
+                            target="_blank">
+                            <img class="kc-image" src="images/kc-product2.webp" alt="KC product code 2" width="1500"
+                                height="630">
+                            <figcaption>Product Detail Code</figcaption>
+                        </a>
+                    </figure>
                 </div>
                 <p> The challenge in integration was making sure everything aligned with the design and to have constant
                     communication and making sure everything is up to date between members. I also learned how to
                     utilize if statements and IDs in different ways. </p>
                 <div class="ideations">
                     <h3> The Solution </h3> <!-- the solution aka the results is the creation of the app -->
+                    <p> In 3 months, my team, 4 Corners, conducted thorough user testing and interviews to ensure that
+                        users had a smooth navigation and experience using the app. Then, we created the frontend and
+                        backend code. In the end, we were able to create a fully functional app that allowed users to
+                        order food, make customizations, delete items, and make a purchase. </p>
                     <p> I communicated well with my team. When images were not found, I talked to the data architects
                         for them. When the product labels might need change or when the order number was too small, I
                         had discussions with the designers to make design decisions . As a co-developer, I had on going
@@ -153,10 +202,14 @@
                 </div>
                 <div class="conclusion">
                     <h3> The Results </h3> <!-- what i want for the future and what i learned-->
-                    <p> In 3 months, my team, 4 Corners, conducted thorough user testing and interviews to ensure that
-                        users had a smooth navigation and experience using the app. Then, we created the frontend and
-                        backend code. In the end, we were able to create a fully functional app that allowed users to
-                        order food, make customizations, delete items, and make a purchase. </p>
+                    <p> This project taught me about different ways to navigate a problem as a team. I learned that even
+                        though I was a developer in this project, I still had the mindset of a
+                        designer and supported designers with UI/UX suggestions to further improve the app. I also honed
+                        my php skills further through this project. If we had more time on this project, I want us to
+                        delve into microinteractions more to make the experience better. It would also be nice to create
+                        other features outside of the critical path of purchasing a product, such as favoriting it.
+                        Overall, I'd say this project was a success and I'd love to work with this team again.
+                    </p>
                 </div>
             </div>
             <div class="conclusion-image">
