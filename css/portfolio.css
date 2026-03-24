@@ -744,8 +744,18 @@ header a {
         margin-top: 1.25rem;
     }
 
+    #ny {
+        grid-area: ny;
+        margin-right: 40px;
+    }
+
     #drexel {
         grid-area: drexel;
+        margin-left: 40px;
+    }
+
+    #music {
+        grid-area: music;
         margin-right: 40px;
     }
 
@@ -790,7 +800,9 @@ header a {
         row-gap: 60px;
         grid-template: auto / repeat(2, 1fr);
         grid-template-areas:
-            'drexel .'
+            'ny .'
+            '. drexel'
+            'music .'
             'oneliketwo-desc oneliketwo'
             'twolikeone .'
             '. illusion-of-transparency'
