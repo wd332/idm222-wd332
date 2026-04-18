@@ -744,6 +744,16 @@ header a {
         margin-top: 1.25rem;
     }
 
+    #webtoon {
+        grid-area: webtoon;
+        margin-right: 40px;
+    }
+
+    #mural {
+        grid-area: mural;
+        margin-left: 40px;
+    }
+
     #ny {
         grid-area: ny;
         margin-right: 40px;
@@ -800,6 +810,8 @@ header a {
         row-gap: 60px;
         grid-template: auto / repeat(2, 1fr);
         grid-template-areas:
+            'webtoon .'
+            '. mural'
             'ny .'
             '. drexel'
             'music .'
